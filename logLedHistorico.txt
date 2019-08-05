@@ -1,0 +1,25 @@
+rack0,error,09:02,31/07/2019,Error de conexion en el rack0
+rack0,on,31/07/2019,12:09:12am,rack0 ha sido modificado desde la aplicación web al estado: on
+rack0,error,31/07/2019,09:17:54am,rack0 ha sido modificado desde la aplicación web al estado: error
+rack0,on,31/07/2019,09:17:57am,rack0 ha sido modificado desde la aplicación web al estado: on
+rack0,tecnico,31/07/2019,09:21:00am,rack0 ha sido modificado desde la aplicación web al estado: tecnico
+rack0,on,31/07/2019,09:21:03am,rack0 ha sido modificado desde la aplicación web al estado: on
+rack0,off,31/07/2019,04:16:00am,rack0 ha sido modificado desde la aplicación web al estado: off
+rack0,on,31/07/2019,04:16:03am,rack0 ha sido modificado desde la aplicación web al estado: on
+rack0,error,31/07/2019,04:16:05am,rack0 ha sido modificado desde la aplicación web al estado: error
+rack0,on,31/07/2019,04:16:11am,rack0 ha sido modificado desde la aplicación web al estado: on
+rack0,tecnico,31/07/2019,01:39:59pm,rack0 ha sido modificado desde la aplicación web al estado: tecnico
+rack0,on,31/07/2019,01:40:05pm,rack0 ha sido modificado desde la aplicación web al estado: on
+rack0,on,31/07/2019,02:35:32pm,rack0 ha sido modificado desde la aplicación web al estado: on
+rack1,error,01/08/2019,12:43:15pm,rack1 ha sido modificado desde la aplicación web al estado: error
+rack2,error,01/08/2019,12:43:17pm,rack2 ha sido modificado desde la aplicación web al estado: error
+rack2,tecnico,01/08/2019,12:43:23pm,rack2 ha sido modificado desde la aplicación web al estado: tecnico
+rack2,on,01/08/2019,12:43:24pm,rack2 ha sido modificado desde la aplicación web al estado: on
+rack1,on,01/08/2019,12:43:26pm,rack1 ha sido modificado desde la aplicación web al estado: on
+rack0,off,01/08/2019,12:43:29pm,rack0 ha sido modificado desde la aplicación web al estado: off
+rack0,on,01/08/2019,12:43:32pm,rack0 ha sido modificado desde la aplicación web al estado: on
+rack0,on,02/08/2019,01:52:43pm,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,error,02/08/2019,02:09:46pm,rack0 ha sido modificado desde la aplicacion web al estado: error
+rack1,error,02/08/2019,02:09:48pm,rack1 ha sido modificado desde la aplicacion web al estado: error
+rack1,on,05/08/2019,11:24:17am,rack1 ha sido modificado desde la aplicacion web al estado: on
+rack0,on,05/08/2019,11:24:22am,rack0 ha sido modificado desde la aplicacion web al estado: on
