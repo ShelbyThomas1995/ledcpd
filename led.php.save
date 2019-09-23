@@ -7,9 +7,6 @@
    $info = $rackID . "*ha*sido*modificado*desde*la*aplicacion*web*al*estado:*" . $mode;
    echo shell_exec("sudo python /var/www/html/prueba.py $rackID $mode $fecha $hora $info");
    echo "<br>";
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -308,7 +305,7 @@ for($i=0; $i < $longitud; $i=$i+2) {
         </div>
 
         <div class="modal-body">
-	<form id="form"  onsubmit="return false;">
+	<form onsubmit="getTecnico()">
 	 <div class="row" align="left" style="margin-top: 15px; margin-left: 7px;">
 	  <strong> Fecha de entrada: </strong> <input type="date" name="fechaTecnico" id="fechaTecnico" style="width: 120px; height: 25px;">
          </div>
@@ -316,12 +313,12 @@ for($i=0; $i < $longitud; $i=$i+2) {
           <strong> Hora de entrada: </strong>  <input type="time" name="horaTecnico" id="horaTecnico" style="width: 120px; height: 25px; margin-left: 9px;">
 	 </div>
 	 <div class="row" align="left" style="margin-top: 10px; margin-left: 7px;">
-          <strong> Duracion(H): </strong>  <input type="number" name="duracionTecnico" id="duracionTecnico" style="width: 120px; height: 25px; margin-left: 35px;">
+          <strong> Duración: </strong>  <input type="time" name="duracionTecnico" id="duracionTecnico" style="width: 120px; height: 25px; margin-left: 55px;">
          </div>
 	 <br>
         </div>
         <div class="modal-footer">
-          <input type="submit" class="btn btn-default" data-dismiss="modal" value="Ok" onclick="entradaTecnico()">
+          <input type="submit" class="btn btn-default" data-dismiss="modal" value="Submit">
         </div>
        </form>
       </div>
@@ -343,21 +340,18 @@ function seleccion(mode) {
 }
 
 function seleccionTecnico(idrack, mode) {
-  document.getElementById("modalrack").innerHTML = "Entrada técnico: " + idrack
-  document.getElementById("modalrack").value = idrack;
+  document.getElementById("modalrack").innerHTML = "Entrada técnico: " + idrack;
   $("#myModal").modal();
 }
 
-function entradaTecnico() {
+function getTecnico() {
+   alert(1);
    fecha = document.getElementById("fechaTecnico").value;
    hora = document.getElementById("horaTecnico").value;
    duracion = document.getElementById("duracionTecnico").value;
 
-   idrack = document.getElementById("modalrack").value;
+   alert(fecha);
 
-   alert("Entrada de tecnico en el rack: " + idrack  + " para la fecha: " + fecha + " | Hora: " + hora + " | Duracion (H): " + duracion + " horas");
-
-   window.location.href='?fecha='+fecha+'&hora='+hora+'&duracion='+duracion+'&id='+idrack+'&mode=tecnico';
 }
 </script>
 

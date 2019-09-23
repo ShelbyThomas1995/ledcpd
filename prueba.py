@@ -5,25 +5,46 @@ import sys
 import os
 
 # LED strip configuration:
-LED_COUNT      = 3      # Number of LED pixels.
-LED_PIN        = 18      # GPIO pin connected to the pixels (18 uses PWM!).
-#LED_PIN        = 10      # GPIO pin connected to the pixels (10 uses SPI /dev/spidev0.0).
+LED_COUNT      = 61       # Number of LED pixels.
 LED_FREQ_HZ    = 800000  # LED signal frequency in hertz (usually 800khz)
 LED_DMA        = 10      # DMA channel to use for generating signal (try 10)
 LED_BRIGHTNESS = 255     # Set to 0 for darkest and 255 for brightest
 LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
-LED_CHANNEL    = 0       # set to '1' for GPIOs 13, 19, 41, 45 or 53
+
+
+# Pines disponibles para LEDs
+
+
+#LED_PIN        = 18 #(Grupo 1: rack0, rack1, rack2, rack3)
+LED_PIN       = 12
+#LED_PIN       = 21
+LED_CHANNEL    = 0
+
+#LED_PIN       = 19
+#LED_PIN       = 13
+#LED_CHANNEL   = 1
+
 
 def printLed(idRack, mode, led):
-	if mode == "on":
-	  led.setPixelColor(int(idRack[4:]), Color(0,0,255))
-	elif mode == "off":
-	  led.setPixelColor(int(idRack[4:]), Color(0,0,0))
-	elif mode == "error":
-	  led.setPixelColor(int(idRack[4:]), Color(0,255,0))
-	elif mode == "tecnico":
-	  led.setPixelColor(int(idRack[4:]), Color(255,255,255))
 
+	if mode == "on":
+	  for i in range(600):
+	    led.setPixelColor(i, Color(0,0,255))
+	elif mode == "off":
+	 for i in range(600):
+            led.setPixelColor(i , Color(0,0,0))
+	 #led.setPixelColor(int(idRack[4:]), Color(0,0,0))
+	elif mode == "error":
+	 for i in range(600):
+            led.setPixelColor(i , Color(0,255,0))
+	 #led.setPixelColor(int(idRack[4:]), Color(0,255,0))
+	elif mode == "tecnico":
+	 for i in range(600):
+            led.setPixelColor(i , Color(255,255,255))
+	 #led.setPixelColor(int(idRack[4:]), Color(255,255,255))
+
+        led.setBrightness(85)
+	#led.setBrightness(250)
 	led.show()
 
 def updateLogEstados(file, check, size, update):
@@ -40,7 +61,8 @@ def updateLogHistorico(file, update):
 	f.close
 
 if __name__ == '__main__':
-    strip = Adafruit_NeoPixel(3, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
+
+    strip = Adafruit_NeoPixel(600, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
     strip.begin()
 
     print "INFO: Consultando log de estados..."
@@ -52,7 +74,6 @@ if __name__ == '__main__':
 	if i != "end":
 	  aux = i.split(' ')
 	  printLed(aux[0], aux[1], strip)
-
 
     #idrack, mode, fecha, hora, rest = sys.argv.split(maxsplit=4)
     idrack = sys.argv[1]
