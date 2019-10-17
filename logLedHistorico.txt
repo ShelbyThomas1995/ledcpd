@@ -86,3 +86,175 @@ rack0,off,26/08/2019,07:18:19am,rack0 ha sido modificado desde la aplicacion web
 rack0,on,26/08/2019,07:18:22am,rack0 ha sido modificado desde la aplicacion web al estado: on
 rack0,tecnico,26/08/2019,07:18:35am,rack0 ha sido modificado desde la aplicacion web al estado: tecnico
 rack0,on,26/08/2019,07:18:44am,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,tecnico,23/09/2019,02:49:02pm,rack0 ha sido modificado desde la aplicacion web al estado: tecnico
+rack0,on,09/10/2019,09:22:57am,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,off,09/10/2019,09:22:59am,rack0 ha sido modificado desde la aplicacion web al estado: off
+rack0,error,09/10/2019,09:23:02am,rack0 ha sido modificado desde la aplicacion web al estado: error
+rack0,on,09/10/2019,09:23:04am,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,on,09/10/2019,09:25:08am,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,on,09/10/2019,09:25:26am,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,on,09/10/2019,09:42:15am,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,error,09/10/2019,12:52:42pm,rack0 ha sido modificado desde la aplicacion web al estado: error
+rack0,off,09/10/2019,12:52:46pm,rack0 ha sido modificado desde la aplicacion web al estado: off
+rack0,tecnico,09/10/2019,12:52:51pm,rack0 ha sido modificado desde la aplicacion web al estado: tecnico
+rack0,on,09/10/2019,12:52:55pm,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,on,09/10/2019,01:14:36pm,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,on,09/10/2019,01:30:33pm,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,on,09/10/2019,01:44:15pm,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,on,09/10/2019,01:55:37pm,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,error,09/10/2019,01:55:42pm,rack0 ha sido modificado desde la aplicacion web al estado: error
+rack0,on,09/10/2019,01:55:45pm,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,on,09/10/2019,01:56:26pm,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack1,error,09/10/2019,01:56:29pm,rack1 ha sido modificado desde la aplicacion web al estado: error
+rack2,tecnico,09/10/2019,01:56:44pm,rack2 ha sido modificado desde la aplicacion web al estado: tecnico
+rack2,tecnico,09/10/2019,01:57:36pm,rack2 ha sido modificado desde la aplicacion web al estado: tecnico
+rack2,tecnico,09/10/2019,01:57:53pm,rack2 ha sido modificado desde la aplicacion web al estado: tecnico
+rack1,on,09/10/2019,01:58:05pm,rack1 ha sido modificado desde la aplicacion web al estado: on
+rack1,off,09/10/2019,01:58:09pm,rack1 ha sido modificado desde la aplicacion web al estado: off
+rack1,error,09/10/2019,01:58:12pm,rack1 ha sido modificado desde la aplicacion web al estado: error
+rack1,error,09/10/2019,01:59:59pm,rack1 ha sido modificado desde la aplicacion web al estado: error
+rack1,error,09/10/2019,02:00:20pm,rack1 ha sido modificado desde la aplicacion web al estado: error
+rack1,error,09/10/2019,02:02:59pm,rack1 ha sido modificado desde la aplicacion web al estado: error
+rack1,error,09/10/2019,02:03:36pm,rack1 ha sido modificado desde la aplicacion web al estado: error
+rack1,error,09/10/2019,02:04:17pm,rack1 ha sido modificado desde la aplicacion web al estado: error
+rack1,error,09/10/2019,02:06:37pm,rack1 ha sido modificado desde la aplicacion web al estado: error
+rack1,error,09/10/2019,02:08:45pm,rack1 ha sido modificado desde la aplicacion web al estado: error
+rack1,on,09/10/2019,02:08:49pm,rack1 ha sido modificado desde la aplicacion web al estado: on
+rack1,error,09/10/2019,02:08:52pm,rack1 ha sido modificado desde la aplicacion web al estado: error
+rack0,error,09/10/2019,02:36:24pm,rack0 ha sido modificado desde la aplicacion web al estado: error
+rack0,on,09/10/2019,02:36:41pm,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,error,09/10/2019,02:42:13pm,rack0 ha sido modificado desde la aplicacion web al estado: error
+rack0,on,09/10/2019,02:42:16pm,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack2,on,10/10/2019,10:10:20am,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack2,on,10/10/2019,10:11:30am,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack2,on,10/10/2019,10:11:34am,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack2,on,10/10/2019,10:11:35am,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack2,on,10/10/2019,10:11:35am,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack2,on,10/10/2019,10:11:35am,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack2,on,10/10/2019,10:11:35am,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack2,on,10/10/2019,10:11:36am,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack2,on,10/10/2019,10:11:36am,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack2,on,10/10/2019,10:11:36am,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack2,on,10/10/2019,10:11:37am,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack2,tecnico,10/10/2019,10:37:24am,rack2 ha sido modificado desde la aplicacion web al estado: tecnico
+rack2,tecnico,10/10/2019,10:42:00am,rack2 ha sido modificado desde la aplicacion web al estado: tecnico
+rack2,tecnico,10/10/2019,10:42:32am,rack2 ha sido modificado desde la aplicacion web al estado: tecnico
+rack2,tecnico,10/10/2019,10:43:02am,rack2 ha sido modificado desde la aplicacion web al estado: tecnico
+rack2,tecnico,10/10/2019,10:50:25am,rack2 ha sido modificado desde la aplicacion web al estado: tecnico
+rack2,tecnico,10/10/2019,10:52:12am,rack2 ha sido modificado desde la aplicacion web al estado: tecnico
+rack2,tecnico,10/10/2019,10:52:33am,rack2 ha sido modificado desde la aplicacion web al estado: tecnico
+rack2,on,10/10/2019,01:50:04pm,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack1,on,15/10/2019,09:24:55am,rack1 ha sido modificado desde la aplicacion web al estado: on
+rack2,error,15/10/2019,09:24:58am,rack2 ha sido modificado desde la aplicacion web al estado: error
+rack0,error,15/10/2019,09:25:02am,rack0 ha sido modificado desde la aplicacion web al estado: error
+rack0,off,15/10/2019,09:30,Error maquina 0
+rack0,on,15/10/2019,09:30,Ok maquina 0
+rack0,error,15/10/2019,10:30,Error maquina 1
+rack0,on,15/10/2019,10:05,Maquina 0 Ok desde Pandora
+rack0,on,15/10/2019,10:05,Maquina 0 Ok desde Pandora
+rack0,error,15/10/2019,10:05,Maquina 0 Ok desde Pandora
+rack1,error,15/10/2019,10:05,Maquina 0 Mal desde Pandora
+rack1,on,15/10/2019,11:19:23am,rack1 ha sido modificado desde la aplicacion web al estado: on
+rack1,error,15/10/2019,10:05,Maquina 0 Mal desde Pandora
+rack1,on,15/10/2019,11:37:58am,rack1 ha sido modificado desde la aplicacion web al estado: on
+rack1,error,15/10/2019,10:05,Maquina 0 Mal desde Pandora
+rack1,on,15/10/2019,11:42:31am,rack1 ha sido modificado desde la aplicacion web al estado: on
+rack1,error,15/10/2019,10:05,Maquina 0 Mal desde Pandora
+rack1,error,15/10/2019,10:05,Maquina 0 Mal desde Pandora
+rack1,on,15/10/2019,12:21:46pm,rack1 ha sido modificado desde la aplicacion web al estado: on
+rack1,error,15/10/2019,10:05,Maquina 0 Mal desde Pandora
+rack1,on,15/10/2019,10:05,Maquina 0 Mal desde Pandora
+rack1,rack1,15/10/2019,10:05,Maquina 0 Mal desde Pandora
+rack1,error,15/10/2019,10:05,Maquina 0 Mal desde Pandora
+rack1,on,15/10/2019,10:05,Maquina 0 Mal desde Pandora
+rack1,on,15/10/2019,12:39:21pm,rack1 ha sido modificado desde la aplicacion web al estado: on
+rack0,error,2019/10/15,13:09:14,0
+rack0,error,2019/10/15,13:27,Prueba
+rack1,error,2019/10/15,13:30,Prueba
+rack1,error,2019/10/15,13:35,Teléfono
+rack1,error,2019/10/15,13:40,Teléfono
+rack1,on,15/10/2019,01:41:59pm,rack1 ha sido modificado desde la aplicacion web al estado: on
+rack1,error,2019/10/15,13:43,Teléfono
+rack1,on,2019/10/15,13:44,Teléfono
+rack1,error,2019/10/15,14:08,Teléfono
+rack1,on,2019/10/15,14:09,Teléfono
+rack0,on,15/10/2019,02:39:39pm,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,error,2019/10/15,14:40,Teléfono
+rack0,on,2019/10/15,14:41,Teléfono
+rack2,on,16/10/2019,09:16:28am,rack2 ha sido modificado desde la aplicacion web al estado: on
+rack0,error,16/10/2019,09:16:31am,rack0 ha sido modificado desde la aplicacion web al estado: error
+rack3,error,16/10/2019,09:16:35am,rack3 ha sido modificado desde la aplicacion web al estado: error
+rack1,tecnico,16/10/2019,09:16:44am,rack1 ha sido modificado desde la aplicacion web al estado: tecnico
+rack1,on,16/10/2019,09:16:47am,rack1 ha sido modificado desde la aplicacion web al estado: on
+rack3,on,16/10/2019,09:16:48am,rack3 ha sido modificado desde la aplicacion web al estado: on
+rack0,on,16/10/2019,09:16:50am,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,off,16/10/2019,09:17:03am,rack0 ha sido modificado desde la aplicacion web al estado: off
+rack1,off,16/10/2019,09:17:06am,rack1 ha sido modificado desde la aplicacion web al estado: off
+rack2,off,16/10/2019,09:17:07am,rack2 ha sido modificado desde la aplicacion web al estado: off
+rack3,error,16/10/2019,09:17:09am,rack3 ha sido modificado desde la aplicacion web al estado: error
+rack3,off,16/10/2019,09:17:12am,rack3 ha sido modificado desde la aplicacion web al estado: off
+rack0,on,16/10/2019,10:28:16am,rack0 ha sido modificado desde la aplicacion web al estado: on
+rack0,off,16/10/2019,10:28:24am,rack0 ha sido modificado desde la aplicacion web al estado: off
+rack0,on,16/10/2019,12:13:55pm,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,error,16/10/2019,12:14:12pm,rack0 Ha sido modificado desde la aplicacion web al estado: error
+rack0,off,16/10/2019,12:14:16pm,rack0 Ha sido modificado desde la aplicacion web al estado: off
+rack0,on,16/10/2019,12:22:01pm,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,error,16/10/2019,12:22:07pm,rack0 Ha sido modificado desde la aplicacion web al estado: error
+rack0,off,16/10/2019,12:22:34pm,rack0 Ha sido modificado desde la aplicacion web al estado: off
+rack0,on,16/10/2019,12:25:40pm,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,tecnico,16/10/2019,12:25:51pm,Entrada de tecnico con fecha: 0 0
+rack0,tecnico,16/10/2019,12:27:31pm,Entrada de tecnico con fecha: 02?mesT=10?anioT=2019// 02:02
+rack0,tecnico,16/10/2019,12:33:26pm,Entrada de tecnico con fecha: 02:02 02?mesT=10?anioT=2019/
+rack0,tecnico,16/10/2019,12:35:55pm,Entrada de tecnico con fecha: 02:02 02?mesT=10?anioT=2019//
+rack0,tecnico,16/10/2019,12:37:07pm,Entrada de tecnico con fecha: 02:02 02?mesT=10?anioT=2019//
+rack0,off,16/10/2019,12:55:14pm,rack0 Ha sido modificado desde la aplicacion web al estado: off
+rack0,tecnico,16/10/2019,01:03:15pm,Entrada de tecnico con fecha: 20/10/2019 12:11
+rack0,off,16/10/2019,01:09:13pm,rack0 Ha sido modificado desde la aplicacion web al estado: off
+rack0,tecnico,16/10/2019,02:22:13pm,Entrada de tecnico con fecha: 19/10/2019 05:12
+rack0,on,16/10/2019,03:35:31pm,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,off,16/10/2019,03:35:33pm,rack0 Ha sido modificado desde la aplicacion web al estado: off
+rack0,tecnico,16/10/2019,03:35:42pm,Entrada de tecnico con fecha: 31/10/2019 12:12
+rack0,tecnico,16/10/2019,03:37:39pm,Entrada de tecnico con fecha: 31/10/2019 12:12
+rack0,on,16/10/2019,03:37:45pm,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,tecnico,16/10/2019,03:37:54pm,Entrada de tecnico con fecha: 10/10/2019 01:01
+rack0,off,16/10/2019,03:37:57pm,rack0 Ha sido modificado desde la aplicacion web al estado: off
+rack0,tecnico,16/10/2019,03:51:17pm,Entrada de tecnico con fecha: 15/10/2019 12:12
+rack0,tecnico,16/10/2019,03:54:15pm,Entrada de tecnico con fecha: 15/10/2019 12:12
+rack0,off,16/10/2019,03:54:38pm,rack0 Ha sido modificado desde la aplicacion web al estado: off
+rack0,tecnico,16/10/2019,03:54:48pm,Entrada de tecnico con fecha: 19/10/2019 12:00
+rack0,off,16/10/2019,04:01:19pm,rack0 Ha sido modificado desde la aplicacion web al estado: off
+rack1,error,10/12/2929,12:30,Prueba desde cmd
+rack3,tecnico,10/12/2929,12:30,Entrada de tecnico con fecha: 0 0
+rack3,off,10/12/2929,12:30,Prueba desde cmd
+rack3,tecnico,10/12/2929,12:30,Entrada de tecnico con fecha: 0 0
+rack3,off,16/10/2019,04:16:35pm,rack3 Ha sido modificado desde la aplicacion web al estado: off
+rack1,off,16/10/2019,04:16:36pm,rack1 Ha sido modificado desde la aplicacion web al estado: off
+rack1,off,16/10/2019,05:20:43pm,rack1 Ha sido modificado desde la aplicacion web al estado: off
+rack0,on,17/10/2019,09:40:11am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:40:23am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,off,17/10/2019,09:40:29am,rack0 Ha sido modificado desde la aplicacion web al estado: off
+rack0,on,17/10/2019,09:41:10am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:41:13am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,tecnico,17/10/2019,09:41:23am,Entrada de tecnico con fecha: 07/10/2019 12:12
+rack0,tecnico,17/10/2019,09:41:25am,Entrada de tecnico con fecha: 07/10/2019 12:12
+rack0,off,17/10/2019,09:41:29am,rack0 Ha sido modificado desde la aplicacion web al estado: off
+rack0,on,17/10/2019,09:47:10am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:47:17am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:47:53am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:47:55am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:48:40am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,off,17/10/2019,09:48:57am,rack0 Ha sido modificado desde la aplicacion web al estado: off
+rack0,on,17/10/2019,09:50:01am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:50:02am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:50:03am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:50:03am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:50:04am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:50:04am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:50:05am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:50:05am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:50:06am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:50:27am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,on,17/10/2019,09:51:02am,rack0 Ha sido modificado desde la aplicacion web al estado: on
+rack0,off,17/10/2019,09:51:07am,rack0 Ha sido modificado desde la aplicacion web al estado: off
+rack0,tecnico,17/10/2019,09:51:31am,Entrada de tecnico con fecha: 31/10/2019 12:12
+rack0,off,17/10/2019,09:52:00am,rack0 Ha sido modificado desde la aplicacion web al estado: off

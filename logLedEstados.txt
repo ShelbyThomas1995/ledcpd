@@ -1,4 +1,5 @@
-rack0 on
-rack1 on
-rack2 on
+rack0 off
+rack1 off
+rack2 off
+rack3 off
 end

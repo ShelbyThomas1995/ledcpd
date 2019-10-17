@@ -11,12 +11,9 @@ LED_DMA        = 10      # DMA channel to use for generating signal (try 10)
 LED_BRIGHTNESS = 255     # Set to 0 for darkest and 255 for brightest
 LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
 
-
 # Pines disponibles para LEDs
-
-
-#LED_PIN        = 18 #(Grupo 1: rack0, rack1, rack2, rack3)
-LED_PIN       = 12
+#LED_PIN       = 18
+LED_PIN        = 12 #(Grupo 1: rack0, rack1, rack2, rack3)
 #LED_PIN       = 21
 LED_CHANNEL    = 0
 
@@ -24,27 +21,36 @@ LED_CHANNEL    = 0
 #LED_PIN       = 13
 #LED_CHANNEL   = 1
 
-
 def printLed(idRack, mode, led):
 
+	aux = idRack.split("rack")
+	if aux[1] == '0':
+          i1 = 0
+          i2 = 30
+        elif aux[1] == '1':
+          i1 = 30
+          i2 = 60
+        elif aux[1] == '2':
+          i1 = 60
+          i2 = 90
+	elif aux[1] == '3':
+	  i1 = 90
+	  i2 = 120
+
 	if mode == "on":
-	  for i in range(600):
+	  for i in range(i1,i2):
 	    led.setPixelColor(i, Color(0,0,255))
 	elif mode == "off":
-	 for i in range(600):
+	 for i in range(i1,i2):
             led.setPixelColor(i , Color(0,0,0))
-	 #led.setPixelColor(int(idRack[4:]), Color(0,0,0))
 	elif mode == "error":
-	 for i in range(600):
+	 for i in range(i1,i2):
             led.setPixelColor(i , Color(0,255,0))
-	 #led.setPixelColor(int(idRack[4:]), Color(0,255,0))
 	elif mode == "tecnico":
-	 for i in range(600):
+	 for i in range(i1,i2):
             led.setPixelColor(i , Color(255,255,255))
-	 #led.setPixelColor(int(idRack[4:]), Color(255,255,255))
 
         led.setBrightness(85)
-	#led.setBrightness(250)
 	led.show()
 
 def updateLogEstados(file, check, size, update):
@@ -65,32 +71,33 @@ if __name__ == '__main__':
     strip = Adafruit_NeoPixel(600, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
     strip.begin()
 
-    print "INFO: Consultando log de estados..."
     list = [line.rstrip('\n') for line in open("/var/www/html/logLedEstados.txt")]
-    print list
 
-    print "Iniciando leds..."
     for i in list:
 	if i != "end":
 	  aux = i.split(' ')
 	  printLed(aux[0], aux[1], strip)
 
-    #idrack, mode, fecha, hora, rest = sys.argv.split(maxsplit=4)
     idrack = sys.argv[1]
     mode = sys.argv[2]
     fecha = sys.argv[3]
     hora = sys.argv[4]
     infoaux = sys.argv[5]
     info = infoaux.replace('*',' ')
+    duracion = sys.argv[6]
+    fechaT = sys.argv[7]
+    horaT = sys.argv[8]
 
-    logHistorico = idrack + "," + mode + "," + fecha + "," + hora + "," + info + "\n"
+    if mode == "tecnico":
+	infoA = "Entrada de tecnico con fecha: " + fechaT + " " + horaT
+        logHistorico = idrack + "," + mode + "," + fecha + "," + hora + "," + infoA + "\n"
+        os.system("sudo python /var/www/html/tecnico.py " + idrack + " " + mode + " " + fecha + " " + hora  + " " + duracion + " " + fechaT + " " + horaT)
+    else:
+	logHistorico = idrack + "," + mode + "," + fecha + "," + hora + "," + info + "\n"
+	printLed(idrack, mode, strip)
 
-    print logHistorico
-    printLed(idrack, mode, strip)
-    print "INFO: Actualizando log de estados..."
+
     updateLogEstados("/var/www/html/logLedEstados.txt",idrack,len(idrack),idrack+" "+mode)
     updateLogHistorico("/var/www/html/logLedHistorico.txt",logHistorico)
     f = open("/var/www/html/logLedEstados.txt")
     list = [line.rstrip('\n') for line in open("/var/www/html/logLedEstados.txt")]
-    print list
-    #os.system("sudo cp /home/pi/logLed.txt /var/www/html/")

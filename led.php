@@ -1,15 +1,30 @@
 <?php
    $rackID = $_GET['id'];
    $mode = $_GET['mode'];
-
+   $info = $rackID . "*Ha*sido*modificado*desde*la*aplicacion*web*al*estado:*" . $mode;
    $fecha = date("d/m/Y");
    $hora = date("h:i:sa");
-   $info = $rackID . "*ha*sido*modificado*desde*la*aplicacion*web*al*estado:*" . $mode;
-   echo shell_exec("sudo python /var/www/html/prueba.py $rackID $mode $fecha $hora $info");
-   echo "<br>";
 
+   if ($mode == "tecnico") {
 
+    $diaT = $_GET['diaT'];
+    $mesT = $_GET['mesT'];
+    $anioT = $_GET['anioT'];
+    $horaT = $_GET['horaT'];
+    $minT = $_GET['minT'];
 
+    $duracion = $_GET['duracionT'];
+    $fechaTe = $diaT . "/" . $mesT . "/" . $anioT;
+    $horaTe = $horaT . ":" . $minT;
+
+   } else {
+
+    $duracion = "0";
+    $fechaTe = "0";
+    $horaTe = "0";
+   }
+
+    echo shell_exec("sudo python /var/www/html/prueba.py $rackID $mode $fecha $hora $info $duracion $fechaTe $horaTe");
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +39,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
-
 <style>
 .cajaRack {
   border: 5px solid black;
@@ -36,20 +50,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+title {
+  color:black;
+}
 .divCenter {
    width:  400px;
    height: 130px;
    margin: 0 auto;
    text-align: center;
 }
-
 .divCajaRack {
    width: 100px;
    height: 130px;
    float: left;
 }
-
 span{
  line-height:normal;
  font-size:11px;
@@ -63,14 +77,12 @@ span{
  text-align:center;
  width: 49.8px;
 }
-
 .boton {
   width: 20px;
   height: 20px;
   background:#646464;
   color:white;
 }
-
 textarea {
   margin-top: 10px;
   resize: none;
@@ -80,7 +92,6 @@ textarea {
    <body>
      <div class="container-fluid">
       <h2 align="center"> <strong>  Control LED CPD </strong> </h2>
-
        <div class="row">
 	<div align="center"  class="col-lg-12">
 
@@ -220,6 +231,10 @@ textarea {
      </div>
 
 <?php
+if(!is_null($mode)) {
+  echo '<script type="text/javascript"> window.location.href="?#" </script>';
+}
+
 $lista = shell_exec("sudo python /var/www/html/getEstados.py");
 $replace = array("[","]","'",",");
 $new = array("","","","");
@@ -236,19 +251,19 @@ for($i=0; $i < $longitud; $i=$i+2) {
        , $racks[$i]
        , '").style.border = "5px solid #3A3A39";'
        , '</script>';
-  }elseif ($racks[$i+1] == 'on') {
+  } elseif ($racks[$i+1] == 'on') {
     echo '<script type="text/javascript">'
        , 'document.getElementById("'
        , $racks[$i]
        , '").style.border = "5px solid #399BF1";'
        , '</script>';
-  }elseif ($racks[$i+1] == 'error') {
+  } elseif ($racks[$i+1] == 'error') {
     echo '<script type="text/javascript">'
        , 'document.getElementById("'
        , $racks[$i]
        , '").style.border = "5px solid #D22525";'
        , '</script>';
-  }elseif ($racks[$i+1] == 'tecnico') {
+  } elseif ($racks[$i+1] == 'tecnico') {
     echo '<script type="text/javascript">'
        , 'document.getElementById("'
        , $racks[$i]
@@ -258,7 +273,7 @@ for($i=0; $i < $longitud; $i=$i+2) {
 }
 
    $rackIDLog = $_GET['getlog'];
-   if(!is_null($rackIDLog)) {
+   if (!is_null($rackIDLog)) {
       $log = shell_exec("sudo python /var/www/html/getHistorico.py $rackIDLog");
 
       $replace = array("[","]","'");
@@ -271,7 +286,7 @@ for($i=0; $i < $longitud; $i=$i+2) {
       $cont = 0;
       for ($k=0; $k<$long; $k=$k+1) {
 
-        if($cont == 5) {
+        if ($cont == 5) {
           echo '<script type="text/javascript">'
            , 'document.getElementById("logHistorico").value +="\n ********************* '
            , '";'
@@ -310,13 +325,13 @@ for($i=0; $i < $longitud; $i=$i+2) {
         <div class="modal-body">
 	<form id="form"  onsubmit="return false;">
 	 <div class="row" align="left" style="margin-top: 15px; margin-left: 7px;">
-	  <strong> Fecha de entrada: </strong> <input type="date" name="fechaTecnico" id="fechaTecnico" style="width: 120px; height: 25px;">
+	  <strong> Fecha de entrada: </strong> <input type="date" name="fechaTecnico" id="fechaTecnico" style="width: 130px; height: 25px;">
          </div>
          <div class="row" align="left" style="margin-top: 10px; margin-left: 7px;">
-          <strong> Hora de entrada: </strong>  <input type="time" name="horaTecnico" id="horaTecnico" style="width: 120px; height: 25px; margin-left: 9px;">
+          <strong> Hora de entrada: </strong>  <input type="time" name="horaTecnico" id="horaTecnico" style="width: 130px; height: 25px; margin-left: 9px;">
 	 </div>
 	 <div class="row" align="left" style="margin-top: 10px; margin-left: 7px;">
-          <strong> Duracion(H): </strong>  <input type="number" name="duracionTecnico" id="duracionTecnico" style="width: 120px; height: 25px; margin-left: 35px;">
+          <strong> Duracion(H): </strong>  <input type="number" name="duracionTecnico" id="duracionTecnico" style="width: 130px; height: 25px; margin-left: 35px;">
          </div>
 	 <br>
         </div>
@@ -330,6 +345,7 @@ for($i=0; $i < $longitud; $i=$i+2) {
   </div>
 
 <script type="text/javascript">
+
 function seleccion(mode) {
     res = mode.split(" ");
 
@@ -352,12 +368,21 @@ function entradaTecnico() {
    fecha = document.getElementById("fechaTecnico").value;
    hora = document.getElementById("horaTecnico").value;
    duracion = document.getElementById("duracionTecnico").value;
-
    idrack = document.getElementById("modalrack").value;
 
-   alert("Entrada de tecnico en el rack: " + idrack  + " para la fecha: " + fecha + " | Hora: " + hora + " | Duracion (H): " + duracion + " horas");
+   aux = fecha.split("-");
+   aux1 = hora.split(":");
 
-   window.location.href='?fecha='+fecha+'&hora='+hora+'&duracion='+duracion+'&id='+idrack+'&mode=tecnico';
+   anioT = aux[0];
+   mesT = aux[1];
+   diaT = aux[2];
+
+   horaT = aux1[0];
+   minT = aux1[1];
+
+   alert("Entrada de tecnico en el rack: " + idrack  + " para la fecha: " + anioT +"/"+mesT+"/"+diaT + " | Hora: " + horaT + ":" + minT + " | Duracion (H): " + duracion + " horas");
+
+   window.location.href='?diaT='+diaT+'&mesT='+mesT+'&anioT='+anioT+'&horaT='+horaT+'&minT='+minT+'&duracionT='+duracion+'&id='+idrack+'&mode=tecnico';
 }
 </script>
 

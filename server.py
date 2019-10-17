@@ -5,7 +5,7 @@ import os
 # Create a TCP/IP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Bind the socket to the port
-server_address = ('localhost',10000)
+server_address = ('192.168.40.16',10000)
 #print >> sys.stderr, ' on %s in port %s' % server_address
 sock.bind(server_address)
 
@@ -18,15 +18,18 @@ while True:
   try:
 	print >> sys.stderr, 'Conexion de: ', client_address
 	while True:
-
           data = connection.recv(150)
 	  print >> sys.stderr, 'Socket recibido: "%s"' % data
-	  print data
-
 	  if data:
 	    aux = data.split(',')
-            info = aux[4].replace(' ','*')
-	    comando = "sudo python /var/www/html/prueba.py" + " " + aux[0] + " " + aux[1] + " " + aux[2] + " " + aux[3] + " " + info
+	    aux2 = aux[2].split(" ")
+	    fecha = aux2[0]
+
+	    hora = aux2[1]
+	    lenhora = len(aux2[1])
+
+	    comando = "sudo python /var/www/html/prueba.py" + " " + aux[0] + " " + aux[1] + " " + fecha  + " " + hora[:lenhora-3] + " " + aux[3]
+	    print comando
 	    os.system(comando)
             print >> sys.stderr, 'Enviando confirmacion de socket...'
             connection.sendall("Socket recibido!")
